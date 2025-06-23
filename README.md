@@ -83,10 +83,10 @@ Example:
 
 ```
 images.len=10
-images.0=b1024&lt;data&gt;
-images.1=b1024&lt;data&gt;
+images.0=b1024<data>
+images.1=b1024<data>
 ...
-images.9=b1024&lt;data&gt;
+images.9=b1024<data>
 ```
 
 Or maybe underscore instead of the dot? Or maybe a snowman emoji? Or maybe you
