@@ -30,11 +30,11 @@ Key is any sequence of bytes=Value is too.
 And that is it. Anything more complex, and you are on your own. Do you want
 escaped strings? Implement them:
 ```
-key="Here's a newline -&gt; \n"
+key="Here's a newline -> \n"
 ```
 Need a binary blob? Go ahead:
 ```
-key=b26Here's another newline -&gt;
+key=b26Here's another newline ->
 
 another_one=sHere's an unescaped string
 ```
