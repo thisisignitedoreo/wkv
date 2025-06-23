@@ -23,18 +23,18 @@ Go ahead, implement that. You need HEX colors? Go ahead, it's that simple.
 
 ## Base case
 At the _very_ base case wkv looks like this:
-```ini
+```
 key=Value
 Key is any sequence of bytes=Value is too.
 ```
 And that is it. Anything more complex, and you are on your own. Do you want
 escaped strings? Implement them:
-```ini
-key="Here's a newline -> \n"
+```
+key="Here's a newline -&gt; \n"
 ```
 Need a binary blob? Go ahead:
-```ini
-key=b26Here's another newline ->
+```
+key=b26Here's another newline -&gt;
 
 another_one=sHere's an unescaped string
 ```
@@ -42,7 +42,7 @@ The concept is that everything is a single type - **data**. The assumptions you
 make about it transform it into different types. Do you want to infer the types
 from the definitions? Go ahead. You don't? Well, you don't. It's _that_ simple.
 
-## This looks stupid. Don't we already have JSON, YAML, TOML, <insert your favourite markup language here>?
+## This looks stupid. Don't we already have JSON, YAML, TOML, &lt;insert your favourite markup language here&gt;?
 
 Yup, we certainly do. The problem is: they are all really complex. You need
 whole libraries just to parse and serialize them. Yes, sometimes this complexity
@@ -54,7 +54,7 @@ Well, what if you really want trees? Go ahead, implement them in wkv. And no one
 will say anything about best practices and unadhering to the spec, because the
 spec _does not exist_. You do whatever, as the name suggests.
 
-## But what about <a common data type>?
+## But what about &lt;a common data type&gt;?
 You want booleans? Go ahead, prefix notation allows really easily to define them
 as `t` and `f` (gives you those lisp vibes, yeah?). Null? `n`. A float number?
 You could define it as a standard floating point literal from C, but that
@@ -65,9 +65,9 @@ I've already gone through the trouble of figuring most of these out, so, here's
 a (kinda) comprehensive list of common data types:
 - `[-]12`: a number, consisting only of digits. Optionally signed, with a minus in
   front of it.
-- `**s**<data>\n`: a string, consisting of any data, unescaped, excluding the newline
-- `"<string>"`: a quoted string, optionally escaped
-- `**b**<length><exactly length bytes>`: a blob of opaque sequence of bytes
+- `**s**&lt;data&gt;\n`: a string, consisting of any data, unescaped, excluding the newline
+- `"&lt;string&gt;"`: a quoted string, optionally escaped
+- `**b**&lt;length&gt;&lt;exactly length bytes&gt;`: a blob of opaque sequence of bytes
 - `**f**12[.34][e56]`: a floating point literal
 - `**t**`, `**f**`: booleans
 - `**n**`: a null type
@@ -81,12 +81,12 @@ Arrays are simple. They are merely a length + a stride of keys.
 
 Example:
 
-```ini
+```
 images.len=10
-images.0=b1024<data>
-images.1=b1024<data>
+images.0=b1024&lt;data&gt;
+images.1=b1024&lt;data&gt;
 ...
-images.9=b1024<data>
+images.9=b1024&lt;data&gt;
 ```
 
 Or maybe underscore instead of the dot? Or maybe a snowman emoji? Or maybe you
@@ -170,7 +170,7 @@ swap the equals separator to the snowman emoji? Go ahead. This is not a format,
 this is a rough approximation of a good config format. Or a savestate format. Or
 a ... you get the point. If you really want you can even store an image as wkv,
 maybe like this?
-```ini
+```
 channels=4
 width=1024
 height=1024
