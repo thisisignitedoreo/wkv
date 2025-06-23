@@ -42,8 +42,7 @@ The concept is that everything is a single type - **data**. The assumptions you
 make about it transform it into different types. Do you want to infer the types
 from the definitions? Go ahead. You don't? Well, you don't. It's _that_ simple.
 
-## This looks stupid. Don't we already have JSON, YAML, TOML, <insert your
-   favourite markup language here>?
+## This looks stupid. Don't we already have JSON, YAML, TOML, <insert your favourite markup language here>?
 
 Yup, we certainly do. The problem is: they are all really complex. You need
 whole libraries just to parse and serialize them. Yes, sometimes this complexity
