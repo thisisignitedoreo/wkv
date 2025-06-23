@@ -67,12 +67,12 @@ I've already gone through the trouble of figuring most of these out, so, here's
 a (kinda) comprehensive list of common data types:
 - `[-]12`: a number, consisting only of digits. Optionally signed, with a minus in
   front of it.
-- `**s**<data>\n`: a string, consisting of any data, unescaped, excluding the newline
+- `s<data>\n`: a string, consisting of any data, unescaped, excluding the newline
 - `"<string>"`: a quoted string, optionally escaped
-- `**b**<length><exactly length bytes>`: a blob of opaque sequence of bytes
-- `**f**12[.34][e56]`: a floating point literal
-- `**t**`, `**f**`: booleans
-- `**n**`: a null type
+- `b<length><exactly length bytes>`: a blob of opaque sequence of bytes
+- `f12[.34][e56]`: a floating point literal
+- `t`, `f`: booleans
+- `n`: a null type
 
 They are designed so it is real easy to parse them just by checking from what
 charachter they start from, so your little loop does not have to go through the
