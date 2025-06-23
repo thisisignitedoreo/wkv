@@ -8,6 +8,8 @@ wkv - a rough approximation of what a key-value config should've looked like.
 wkv is a key-value data storage format designed to be fast and simple. No more,
 no less.
 
+wkv stands for Whatever Key-Values.
+
 ## But... where is all the code?
 LMAO, where do you think it is?
 
