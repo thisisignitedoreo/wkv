@@ -65,9 +65,9 @@ I've already gone through the trouble of figuring most of these out, so, here's
 a (kinda) comprehensive list of common data types:
 - `[-]12`: a number, consisting only of digits. Optionally signed, with a minus in
   front of it.
-- `**s**&lt;data&gt;\n`: a string, consisting of any data, unescaped, excluding the newline
-- `"&lt;string&gt;"`: a quoted string, optionally escaped
-- `**b**&lt;length&gt;&lt;exactly length bytes&gt;`: a blob of opaque sequence of bytes
+- `**s**<data>\n`: a string, consisting of any data, unescaped, excluding the newline
+- `"<string>"`: a quoted string, optionally escaped
+- `**b**<length><exactly length bytes>`: a blob of opaque sequence of bytes
 - `**f**12[.34][e56]`: a floating point literal
 - `**t**`, `**f**`: booleans
 - `**n**`: a null type
