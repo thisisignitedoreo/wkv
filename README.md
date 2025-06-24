@@ -189,3 +189,15 @@ Anyway, feel free to use this README for anything. For making real
 production-grade stuff, for hackernews praising for how simple this is and how
 we do not need any more complexity and for hackernews raging for how simple this
 is and how we need more complexity.
+
+---
+
+## r/programming chaos
+Okay, I did not expect people to rage as much as they were over the fact that
+you actually have to write code for this one. Like, who are you? _A programmer?_
+No shit this isn't interoperable - I am not going to put this format into a
+REST API, I am parsing some user data and some savestates with this. That is it. If this
+makes your blood boil - I think I did a very well job here. Actually, the more people rage
+\- the more I think I've honestly struct gold. For all the programmers reading this
+\- have fun implmeneting this, for all the "programmers" - I do not want you to
+get your diaper messy, go ahead and rage about this on some forums. &gt;:)
