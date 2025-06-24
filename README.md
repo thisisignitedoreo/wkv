@@ -201,3 +201,6 @@ makes your blood boil - I think I did a very well job here. Actually, the more p
 \- the more I think I've honestly struct gold. For all the programmers reading this
 \- have fun implmeneting this, for all the "programmers" - I do not want you to
 get your diaper messy, go ahead and rage about this on some forums. &gt;:)
+
+Seriously, the fact that REAL people that program FOR MONEY wrote this in the comments
+honestly makes me want to get replaced by AI.
